@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 400;
+  margin: 30px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #25112c;
+}
+
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  position: relative;
+    min-height: 100vh;
+}
+
+.active, .done, .form {
+  padding-left: 15px;
+  padding-right: 15px;
+}

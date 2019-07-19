@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background: url(../img/background.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    color: #fff;
+    border-bottom: 3px solid #f76f71;
+}
+
+.app-title {
+    width: 50%;
+    padding-top: 85px;
+    padding-left: 15px;
+}
+
+.app-title h1 {
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.app-title p {
+    margin-top: 70px;
+}
+
+.statistics {
+    padding-top: 125px;
+    width: 40%;
+    background-color: rgba(255,255,255,0.1);
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+.statistics .tasks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.statistics .tasks .active, .statistics .tasks .done {
+    text-align: right;
+}
+
+.statistics .tasks .active span, .statistics .tasks .done span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.statistics .progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.statistics .progress .progressbar {
+    margin-right: 15px;
+    width: 35px;
+
+}
+
+@media (max-width: 512px) {
+    .statistics {
+        width: 50%;
+    }
+}
+
+@media (max-width: 412px) {
+    .statistics .tasks {
+        flex-direction: column;
+    }
+    .statistics .tasks .active {
+        margin-bottom: 15px;
+    }
+
+    .statistics .tasks {
+        margin-bottom: 30px;
+    }
+
+    .tasks .active, .tasks .done {
+        padding-right: 0;
+    }
+
+    .single-input input.task-input {
+        width: 140px;
+    }
+
+    .single-input {
+        flex-direction:  column;
+        margin-bottom: 15px;
+    }
+
+    .single-input label, .single-input input.task-input, .single-input select, .single-input input {
+        width: 100%;
+    }
+
+    .form.active {
+        height: 470px;
+    }
+}
